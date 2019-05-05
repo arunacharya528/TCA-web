@@ -1,0 +1,118 @@
+header{
+    font-size:30px;
+    letter-spacing: 0;
+    font-style: normal;
+}
+#form_container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+}
+#form_background{
+    background-color: rgb(70, 66, 66);
+    width: 45%;
+    color: white;
+    padding:15px;
+}
+#form_title{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#form_body{
+    display: flex;
+    justify-content: space-around;
+}
+#job_index{
+    border:none;
+    padding:4px 0 4px 0;
+    width:408px;
+    transition-duration: 0.5s;
+}
+#name_contact{
+    display: flex;
+}
+#name{
+    width: 199px;
+}
+#cell_no{
+    width: 199px;
+    margin-left:6px;
+}
+#email{
+    width: 406px;
+}
+#desc{
+    width: 406px;
+    height:200px;
+    resize: none;
+}
+#submit{
+    width:409px;
+    background: rgb(51, 110, 219);
+    color: white;
+    transition-duration: 0.5s;
+    padding: 10px 0;
+}
+#submit:hover{
+    background-color: rgb(240, 53, 53);
+}
+#name,#cell_no,#email,#desc,#submit,#job_index{
+    border: none;
+    margin-top: 6px;
+    padding: 5px 0 5px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+#social_media_connect{
+    text-align: center;
+    padding: 45px 0px;
+}
+#social_media_connect a{
+    text-decoration: none;
+    color:white;
+}
+@media only screen and (max-width:1300px){
+    #form_background{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    #form_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #form_background{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #name_contact{
+        display: flex;
+        flex-direction: column;
+    }
+    #job_index,#name,#cell_no,#email,#desc,#submit{
+        width:100%;
+    }
+    #cell_no{
+        margin: 6px 0 0 0;
+    }
+    #job_index,#submit{
+        width:100.5%;
+    }
+}

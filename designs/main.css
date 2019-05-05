@@ -78,20 +78,38 @@ section{
 
 /*scrollbar*/
 ::-webkit-scrollbar {
-    height:6px;
-    width:6px;
+    height:8px;
+    width:8px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(117, 117, 117); 
+    border:1.5px solid black; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right,rgb(255, 196, 196),red,rgb(255, 196, 196));
+    border:2px solid black;
+    border-radius: 8px;
 }
-  
-
 ::-webkit-scrollbar-thumb:hover {
     
-    background: linear-gradient(to right,rgb(255, 196, 196),red,rgb(255, 196, 196)); 
+    background: black; 
+}
+
+@media only screen and (max-width:426px){
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:100%;
+        height:50px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    header{
+        font-size: 30px;
+    }
+    section{
+        margin-left: 0;
+    }
 }
