@@ -27,7 +27,7 @@ section{
     color:white;
     background: rgb(54, 53, 53);
     z-index: 1;
-    top:-95.3%;
+    top:-50%;
     left:0%;
     text-align: center;
     position: relative;
@@ -109,7 +109,10 @@ form{
     text-decoration: none;
     color:white;
 }
-
+.social_icon{
+    height:20px;
+    padding:35px 15px;
+}
 
 
 @media only screen and (max-width:1300px){
@@ -147,5 +150,18 @@ form{
     }
     #job_index,#submit{
         width:100.5%;
+    }
+    .job_description{
+        width: 100%;
+    }
+    .job_image{
+        width: 100%;
+    }
+    #job_sample_holder{
+        display: flex;
+        flex-direction: column;
+    }
+    #job1,#job2{
+        top: -50%;
     }
 }
