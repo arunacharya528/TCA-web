@@ -35,6 +35,7 @@ body{
     background-color: red;
     
 }
+
 .label, #label_detail{
     padding: 3px 5px;
     border-radius: 5px;
@@ -95,21 +96,31 @@ section{
     background: black; 
 }
 
-@media only screen and (max-width:426px){
+@media only screen and (max-width:1300px){
     #nav{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         width:100%;
-        height:50px;
+        justify-content: center;
+        height:54px;
         position: sticky;
         top: 0;
         z-index: 1;
     }
+    .nav_icon{
+        padding: 0 6vw 0 6vw;
+    }
     header{
         font-size: 30px;
+        letter-spacing: 0.5vw;
     }
     section{
         margin-left: 0;
+    }
+    .material-icons:hover{
+        background-color: #124EB3;
+    }
+    .nav_icon:hover .label{
+        display: none;
     }
 }
