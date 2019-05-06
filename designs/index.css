@@ -13,6 +13,9 @@
     flex-wrap: nowrap;
     overflow: auto;
     padding: 0;
+
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
 }
 .main_row_section{
     display: flex;
@@ -32,6 +35,8 @@
 .news_outline{
     padding:0;
     width:300px;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
 }
 .news_outline a{
     text-decoration: none;

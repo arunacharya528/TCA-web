@@ -28,7 +28,7 @@ body{
 .material-icons{
     padding:15px 0 15px 0;
     width: 100%;
-    transition-duration: 0.3s;
+    transition-duration: 1s;
     
 }
 .material-icons:hover{
@@ -38,7 +38,7 @@ body{
 
 .label, #label_detail{
     padding: 3px 5px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 0;
     color:white;
     background: rgb(54, 53, 53);
     display: none;
@@ -57,7 +57,8 @@ body{
 }
 .label:hover #label_detail{
     display: block;
-    margin: -1px 0;;
+    padding:3px 5px 3px 10px;
+    left:95%;
 }
 /*header section*/
 header{
@@ -122,5 +123,8 @@ section{
     }
     .nav_icon:hover .label{
         display: none;
+    }
+    .material-icons{
+        padding:15px 0 15px 0;
     }
 }

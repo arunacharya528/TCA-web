@@ -3,6 +3,36 @@ header{
     letter-spacing: 0;
     font-style: normal;
 }
+section{
+    background-image: linear-gradient(to top, rgb(0, 153, 255) ,white,white);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*job _description*/
+#job_sample_holder{
+    display: flex;
+    flex-direction: row;
+}
+.job_description{
+    width: 50%;
+}
+.job_image{
+    width: 99%;
+    box-shadow: 2px 2px 15px black;
+}
+#job1,#job2{
+    padding: 3px 5px;
+    color:white;
+    background: rgb(54, 53, 53);
+    z-index: 1;
+    top:-95.3%;
+    left:0%;
+    text-align: center;
+    position: relative;
+}
+
 #form_container{
     display: flex;
     flex-wrap: nowrap;
@@ -79,6 +109,9 @@ form{
     text-decoration: none;
     color:white;
 }
+
+
+
 @media only screen and (max-width:1300px){
     #form_background{
         width: 100%;
