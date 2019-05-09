@@ -1,44 +1,71 @@
+section{
+    display: flex;
+    flex-direction: column;
+    margin:0 25% 0 25%;
+}
+#summary{
+    width:150px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    left:100%;
+    background-color: rgb(196, 191, 191);
+}
+#summary a{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+#summary a:hover{
+    background-color: red;
+    color: white;
+}
 .section_title{
     font-size: 30px;
     color: red;
     padding:15px;
-    position: -webkit-sticky;
     position: sticky;
     left: 0;
 }
+#rowOne{
+    margin-top:-150px;
+}
 .row_section{
-    height:360px;
+    width:100%;
+    height:auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     overflow: auto;
     padding: 0;
 
-    transition-duration: 3s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
 .main_row_section{
     display: flex;
-    flex-direction: row;
+    width:100%;
+    flex-direction: column;
     flex-wrap: nowrap;
 }
 .news_image{
-    width:300px;
-    height:60%;
-    transition-property: height width;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-}
-.news_image:hover{
-    height:70%;
+    height:auto;
+    width:100%;
 }
 .news_outline{
     padding:0;
-    width:300px;
+    width:100%;
     transition-duration: 3s;
     transition-timing-function: ease-in;
+    
+
 }
 .news_outline a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
@@ -50,7 +77,21 @@
     padding:10px;
     overflow:hidden;
 }
-@media only screen and (max-width:426px){
+@media only screen and (max-width:450px){
+    section{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+    }
+    #summary{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+    #rowOne{
+        margin:0;
+    }
     .main_row_section{
         display: flex;
         flex-direction: column;
@@ -69,6 +110,7 @@
         padding: 0;
         height: auto;
         margin: 0;
+        width: 100%;
     }
     .news_outline{
         padding: 0;

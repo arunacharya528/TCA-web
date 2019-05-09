@@ -80,21 +80,21 @@ section{
 
 /*scrollbar*/
 ::-webkit-scrollbar {
-    height:8px;
-    width:8px;
+    height:5px;
+    width:5px;
 }
 
 ::-webkit-scrollbar-track {
-    border:1.5px solid black; 
+    border:none 
 }
 
 ::-webkit-scrollbar-thumb {
-    border:2px solid black;
+    background:grey;
     border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
     
-    background: black; 
+    background: rgb(90, 89, 89); 
 }
 
 @media only screen and (max-width:1300px){

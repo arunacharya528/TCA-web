@@ -3,3 +3,53 @@ header{
     letter-spacing: 0;
     font-style: normal;
 }
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20% 0 20%;
+}
+.article_section{
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    padding: 10px;
+}
+.article_title{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: red;
+}
+.article_link a{
+    border-radius: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #124EB3;
+    color: white;
+    padding: 10px;
+    transition-duration: 0.5s;
+    margin: 0;
+}
+.article_link a:hover{
+    background-color: red;
+}
+.article_body{
+    padding: 20px 0 0 0;
+    text-align: justify;
+    word-spacing: 3px;
+    line-height: 30px;
+    font-size: 18px;
+}
+@media screen and (max-width:600px){
+    section{
+        margin: 0;
+    }
+    .article_section{
+        margin: 0;
+        border-radius: 0px;
+        border: none;
+        border-bottom: 1px solid rgb(180, 178, 178);
+    }
+}
