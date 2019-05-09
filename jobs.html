@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="designs/main.css">
-    <link rel='stylesheet' href="designs/jobs.css">
+    <link rel='stylesheet' href="main.css">
+    <link rel='stylesheet' href="jobs.css">
     <meta name="theme-color" content="#124EB3">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <title>Document</title>
@@ -50,8 +52,8 @@
     </header>
     <section>
         <div id='job_sample_holder'>
-            <div class='job_description'><img src='images/job 1.png' class="job_image"><span id='job1'>Job 1</span></div>
-            <div class='job_description'><img src='images/job-2.png' class="job_image"><span id='job1'>Job 2</span></div>
+            <div class='job_description'><img src='job 1.png' class="job_image"><span id='job1'>Job 1</span></div>
+            <div class='job_description'><img src='job-2.png' class="job_image"><span id='job1'>Job 2</span></div>
         </div>
         <div id='form_container'>
             <div id='form_background'>
@@ -62,31 +64,32 @@
                         Contact no: **********
                     </div>
                     <div id='right_content'>
-                        <form action="#">
+                        <form action="validate.js">
                             <select id='job_index' >
                                 <option>Job 1</option>
                                 <option>Job 2</option>
                             </select>
                             <div id='name_contact'>
-                                <input type="text" placeholder="Name" id='name'>
+                                <input type="text" placeholder="Name" id='name' required>
                                 <input type="text" placeholder="Cell no" id='cell_no'>
                             </div>
                             <input type="email" placeholder="Email" id='email' required>
-                            <textarea placeholder="Description" id='desc'></textarea><br>
-                            <input type="submit" value='Submit' placeholder="Name" id='submit'>
+                            <textarea placeholder="Contditions" id='desc'></textarea><br>
+                            <input type="submit" value='Submit' id='submit' onclick="prompt()">
                         </form>
-                        <div id='remarks'></div>
+                        <div id='remarks'><br><br><br></div>
                     </div>
                 </div>
                 <div id='social_media_connect'>
                     Follow us: <br>
-                    <a href='http://facebook.com'><img src='images/fb.png' class='social_icon'></a>
-                    <a href='http://facebook.com'><img src='images/tb.png' class='social_icon'></a>
-                    <a href='http://facebook.com'><img src='images/ib.png' class='social_icon'></a>
+                    <a href='http://facebook.com'><img src='fb.png' class='social_icon'></a>
+                    <a href='http://facebook.com'><img src='tb.png' class='social_icon'></a>
+                    <a href='http://facebook.com'><img src='ib.png' class='social_icon'></a>
                 </div>
             </div>
         </div>
     </section>
-</div>
+    </div>
+    <script src="validate.js"></script>
 </body>
 </html>
