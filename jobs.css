@@ -3,13 +3,6 @@ header{
     letter-spacing: 0;
     font-style: normal;
 }
-section{
-    background-image: linear-gradient(to top, rgb(0, 153, 255) ,white,white);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 /*job _description*/
 #job_sample_holder{
     display: flex;
@@ -34,6 +27,7 @@ section{
 }
 
 #form_container{
+    margin-top:300px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -86,13 +80,13 @@ form{
 }
 #submit{
     width:409px;
-    background: rgb(51, 110, 219);
+    background: rgba(255, 0, 0, 0.781);
     color: white;
     transition-duration: 0.5s;
     padding: 10px 0;
 }
 #submit:hover{
-    background-color: rgb(240, 53, 53);
+    background-color: rgb(102, 10, 10);
 }
 #name,#cell_no,#email,#desc,#submit,#job_index{
     border: none;
@@ -101,18 +95,7 @@ form{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
 }
-#social_media_connect{
-    text-align: center;
-    padding: 45px 0px;
-}
-#social_media_connect a{
-    text-decoration: none;
-    color:white;
-}
-.social_icon{
-    height:20px;
-    padding:35px 15px;
-}
+
 #remarks{
     color: red;
     font-family: 'Courier New', Courier, monospace;

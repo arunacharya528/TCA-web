@@ -1,36 +1,14 @@
 section{
     display: flex;
-    flex-direction: column;
-    margin:0 25% 0 25%;
-}
-#summary{
-    width:150px;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    left:100%;
-    background-color: rgb(85, 83, 83);
-}
-#summary a{
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-}
-#summary a:hover{
-    background-color: red;
-    color: white;
+    flex-direction: row;
+    margin:0 0 0 3.4%;
 }
 .section_title{
     font-size: 30px;
-    color: red;
+    color: white;
     padding:15px;
     position: sticky;
     left: 0;
-}
-#rowOne{
-    margin-top:-150px;
 }
 .row_section{
     width:100%;
@@ -44,6 +22,13 @@ section{
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
+#next_row_section{
+    width: 50%;
+    padding: 0 15px;
+}
+#rowOne{
+    padding-left:15px;
+}
 .main_row_section{
     display: flex;
     width:100%;
@@ -53,12 +38,17 @@ section{
 .news_image{
     height:auto;
     width:100%;
+    border-radius: 8px 8px 0 0;
 }
 .news_outline{
     padding:0;
     width:100%;
-    transition-duration: 3s;
+    margin-top:20px;
+    transition-duration: 1s;
     transition-timing-function: ease-in;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 5px 15px black;
     
 
 }
@@ -77,18 +67,7 @@ section{
     padding:10px;
     overflow:hidden;
 }
-@media only screen and (max-width:1300px){
-    #summary{
-        width:150px;
-        display: flex;
-        flex-direction: column;
-        position: sticky;
-        top: 54px;
-        z-index: 3;
-        left:100%;
-    }
-}
-@media only screen and (max-width:450px){
+@media only screen and (max-width:600px){
     section{
         display: flex;
         flex-direction: column;
@@ -102,6 +81,11 @@ section{
     }
     #rowOne{
         margin:0;
+        padding: 0;
+    }
+    #next_row_section{
+        width: 100%;
+        padding: 0;
     }
     .main_row_section{
         display: flex;
@@ -111,11 +95,13 @@ section{
     .news_outline{
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 0 0 15px 0;
+        border-radius:0px;
     }
     .news_image{
         width: 100%;
         height: auto;
+        border-radius: 0px;
     }
     .row_section{
         padding: 0;

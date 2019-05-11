@@ -2,12 +2,17 @@ body{
     margin: 0;
     background-color: white;
     font-family: 'Titillium Web', sans-serif;
+    background-image: url(https://wallpaperplay.com/walls/full/2/2/e/73029.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*navigating section*/
 #nav{
     list-style-type: none;
-    background: #124EB3;
+    background: rgb(17, 16, 16);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -33,7 +38,7 @@ body{
     
 }
 .material-icons:hover{
-    background-color: red;
+    background-color: rgba(255, 7, 7, 0.747);
     
 }
 
@@ -63,7 +68,7 @@ body{
 }
 /*header section*/
 header{
-    background-color: #005FFF;
+    background-color: #C60021;
     color: white;
     text-align: right;
     font-size: 3vw;
@@ -75,6 +80,20 @@ header{
 section{
     margin-left: 3.4%;
     padding: 0;
+}
+#social_media_connect{
+    margin-top: 300px;
+    text-align: center;
+    padding: 45px 0px;
+    background-color: rgb(27, 26, 26);
+}
+#social_media_connect a{
+    text-decoration: none;
+    color:white;
+}
+.social_icon{
+    height:20px;
+    padding:35px 15px;
 }
 
 /*scrollbar*/
@@ -118,7 +137,7 @@ section{
         margin-left: 0;
     }
     .material-icons:hover{
-        background-color: #124EB3;
+        background-color: rgb(17, 16, 16);
     }
     .nav_icon:hover .label{
         display: none;
