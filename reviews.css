@@ -1,29 +1,29 @@
 header{
-    font-size:30px;
+    font-size:30px;             /*overriding header from main.css*/
     letter-spacing: 0;
     font-style: normal;
 }
 section{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around;          /*overriding section from main,css*/
     margin: 0 20% 0 20%;
 }
 .article_section{
     background-color: white;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 10px;               /*container for title of article link and content*/
     padding: 10px;
 }
 .article_title{
     font-size: 30px;
-    display: flex;
+    display: flex;                  /*title of article*/
     justify-content: space-between;
     color: red;
 }
 .article_link a{
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 15px;                /*link of the article*/
     text-decoration: none;
     background-color: rgb(32, 31, 31);
     color: white;
@@ -32,16 +32,16 @@ section{
     margin: 0;
 }
 .article_link a:hover{
-    background-color: rgb(194, 3, 3);
+    background-color: rgb(194, 3, 3);           /*conditin while hovering over the lik of article*/
 }
 .article_body{
     padding: 20px 0 0 0;
     text-align: justify;
-    word-spacing: 3px;
+    word-spacing: 3px;              /*content of the article*/
     line-height: 30px;
     font-size: 18px;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:600px){            /*condition when screen width is less than 600px*/
     section{
         margin: 0;
     }

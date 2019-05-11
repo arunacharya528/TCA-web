@@ -1,25 +1,25 @@
-header{
+header{                         /*overriding header from main.css*/
     font-size:30px;
     letter-spacing: 0;
     font-style: normal;
 }
 /*job _description*/
 #job_sample_holder{
-    display: flex;
+    display: flex;          /*container for holding the jobs detail*/
     flex-direction: row;
 }
 .job_description{
-    width: 50%;
+    width: 50%;                 /*container for holding job image*/
 }
 .job_image{
     width: 99%;
-    box-shadow: 2px 2px 15px black;
+    box-shadow: 2px 2px 15px black;     /*job image*/
 }
 #job1,#job2{
     padding: 3px 5px;
     color:white;
     background: rgb(54, 53, 53);
-    z-index: 1;
+    z-index: 1;                         /*job tag*/
     top:-50%;
     left:0%;
     text-align: center;
@@ -28,40 +28,40 @@ header{
 
 #form_container{
     margin-top:300px;
-    display: flex;
+    display: flex;              /*container of the form*/
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
 }
 #form_background{
     background-color: rgb(70, 66, 66);
-    width: 45%;
+    width: 45%;                         /*form section that covers greyish portion*/
     color: white;
     padding:15px;
 }
 #form_title{
     text-align: center;
-    color: white;
+    color: white;           /*title of the form*/
     font-size: 25px;
     padding: 25px;
 }
 form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;             /*actual html form element*/
     justify-content: center;
 }
 #form_body{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;              /*form section excluding form header*/
 }
 #job_index{
     border:none;
     padding:4px 0 4px 0;
-    width:408px;
+    width:408px;                    /*dropdown of job*/
     transition-duration: 0.5s;
 }
 #name_contact{
-    display: flex;
+    display: flex;              /*components of the form*/
 }
 #name{
     width: 199px;
@@ -86,10 +86,10 @@ form{
     padding: 10px 0;
 }
 #submit:hover{
-    background-color: rgb(102, 10, 10);
+    background-color: rgb(102, 10, 10);         /*action while hovering over sub,it button*/
 }
 #name,#cell_no,#email,#desc,#submit,#job_index{
-    border: none;
+    border: none;                                   /*common properties of form elements*/
     margin-top: 6px;
     padding: 5px 0 5px 2px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,17 +99,17 @@ form{
 #remarks{
     color: red;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    text-align: center;                                 /*section for message generated through javascript*/
     width:370px;
     padding: 15px;
 }
 
-@media only screen and (max-width:1300px){
+@media only screen and (max-width:1300px){          /*condition of screen less than 1300px width*/
     #form_background{
         width: 100%;
     }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px){           /*conditin for screen less than 600px width*/
     #form_body{
         display: flex;
         flex-direction: column;

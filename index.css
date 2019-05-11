@@ -1,19 +1,19 @@
 section{
     display: flex;
     flex-direction: row;
-    margin:0 0 0 3.4%;
+    margin:0 0 0 3.4%;              /*overriding value of section from main.css*/
 }
 .section_title{
     font-size: 30px;
     color: white;
-    padding:15px;
+    padding:15px;               /*title of a section ,here title of collection of news*/
     position: sticky;
     left: 0;
 }
 .row_section{
     width:100%;
     height:auto;
-    display: flex;
+    display: flex;              /*container for title and collection of news*/
     flex-direction: column;
     flex-wrap: nowrap;
     overflow: auto;
@@ -22,29 +22,29 @@ section{
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
-#next_row_section{
+#next_row_section{          /*division for the second news ie news at the right part of desktop*/
     width: 50%;
     padding: 0 15px;
 }
 #rowOne{
-    padding-left:15px;
+    padding-left:15px;      /*first collection of news*/
 }
 .main_row_section{
     display: flex;
     width:100%;
-    flex-direction: column;
+    flex-direction: column;         /*container of news*/
     flex-wrap: nowrap;
 }
 .news_image{
     height:auto;
     width:100%;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;         /*image of the news*/
 }
 .news_outline{
     padding:0;
     width:100%;
     margin-top:20px;
-    transition-duration: 1s;
+    transition-duration: 1s;                /*container for image of news and outline of news*/
     transition-timing-function: ease-in;
     background-color: white;
     border-radius: 8px;
@@ -55,29 +55,23 @@ section{
 .news_outline a{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around;          /*link placed at the outlline of news*/
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 .news_outline:hover .news_title{
-    color: red;
+    color: red;                 /*action at the title of news on hovering over news outline*/
 }
 .news_title{
     font-size: 20px;
-    padding:10px;
+    padding:10px;               /*title of a specific news*/
     overflow:hidden;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px){       /*adjusting content for width less than 600px*/
     section{
         display: flex;
         flex-direction: column;
         margin:0;
-    }
-    #summary{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        position: static;
     }
     #rowOne{
         margin:0;
