@@ -9,6 +9,6 @@ function prompt(){
     }
     else if (email == ''){
         document.getElementById("remarks").innerHTML
-        ="Enter your Email for contacting you"
+        ="Enter your Email for contacting you";
     }
 }
