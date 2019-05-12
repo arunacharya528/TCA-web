@@ -92,11 +92,6 @@ section{
     height:5px;             /*dimension of scroll bar of each page*/
     width:5px;
 }
-
-::-webkit-scrollbar-track {
-    border:none                 /*scrollbar track of each page*/
-}
-
 ::-webkit-scrollbar-thumb {
     background:grey;
     border-radius: 8px;         /*scrolling button of each page*/
@@ -105,6 +100,12 @@ section{
     
     background: rgb(90, 89, 89);            /*hovering over scrollling button of each page*/
 }
+
+::-webkit-scrollbar-track {
+    border:none                 /*scrollbar track of each page*/
+}
+
+
 
 @media only screen and (max-width:1300px){      /*adjusting for screen less than 1300px dimension*/
     #nav{

@@ -51,32 +51,32 @@
         Jobs
     </header>
     <section>
-        <div id='job_sample_holder'>
-            <div class='job_description'><img src='job 1.png' class="job_image"><span id='job1'>Job 1</span></div>
-            <div class='job_description'><img src='job-2.png' class="job_image"><span id='job1'>Job 2</span></div>
+        <div id='job_sample_holder'>            <!--photo holding container-->
+            <div class='job_description'><img src='job-1.png' class="job_image" alt='Job Image'><span id='job1' >Job 1</span></div>
+            <div class='job_description'><img src='job-2.png' class="job_image" alt='Job Image'><span id='job2' >Job 2</span></div>
         </div>
-        <div id='form_container'>
-            <div id='form_background'>
-                <div id='form_title'>SUBMIT A FORM</div>
-                <div id='form_body'>
+        <div id='form_container'>       <!--form position adjusting container-->
+            <div id='form_background'>  <!--main form adjusting container-->
+                <div id='form_title'><h4>SUBMIT A FORM</h4></div>   <!--title of form-->
+                <div id='form_body'>            <!--body of form containing details and inputs-->
                     <div id='left_content'>Fill and submit the required deteails to apply for the job
                         <br><br><br>Or contact us at following details<br><br>
                         Contact no: **********<br><br>
                         You will get a mail in your email account for interview if you are accepted.
                     </div>
-                    <div id='right_content'>
+                    <div id='right_content'>        <!--actual inputing setion of the form-->
                         <form action="#">
-                            <select id='job_index' >
-                                <option>Job 1</option>
+                            <select id='job_index' > <!--dropdown-->
+                                <option>Job 1</option>  <!--dropdown option-->
                                 <option>Job 2</option>
                             </select>
                             <div id='name_contact'>
-                                <input type="text" placeholder="Name" id='name' required>
-                                <input type="text" placeholder="Cell no" id='cell_no'>
+                                <input type="text" placeholder="Name" id='name' required>           <!--input field for form-->
+                                <input type="text" placeholder="Cell no" id='cell_no'>      <!--input field for form-->
                             </div>
-                            <input type="email" placeholder="Email" id='email' required>
-                            <textarea placeholder="Contditions" id='desc'></textarea><br>
-                            <input type="submit" value='Submit' id='submit' onclick="prompt()">
+                            <input type="email" placeholder="Email" id='email' required>        <!--input field for form-->
+                            <textarea placeholder="Contditions" id='desc'></textarea><br>       <!-- a large text area-->
+                            <input type="submit" value='Submit' id='submit' onclick="prompt()">     <!--input field for form-->
                         </form>
                         <div id='remarks'><br><br><br></div>
                     </div>
@@ -86,9 +86,9 @@
     </section>
     </div>
     <div id='social_media_connect'>
-        <a href='http://facebook.com'><img src='fb.png' class='social_icon'></a>
-        <a href='http://facebook.com'><img src='tb.png' class='social_icon'></a>
-        <a href='http://facebook.com'><img src='ib.png' class='social_icon'></a>
+        <a href='http://facebook.com'><img src='fb.png' class='social_icon' alt='Facebook'></a>
+    <a href='http://facebook.com'><img src='tb.png' class='social_icon' alt='Twitter'></a>
+    <a href='http://facebook.com'><img src='ib.png' class='social_icon' alt='Instagram'></a>
     </div>
     <script src="validate.js"></script>
 </body>

@@ -37,6 +37,7 @@ section{
     width: 100%;                /*iframe of the video*/
     height: 600px;
     border-radius:8px 8px 0 0;
+    border:0;
 }
 .video_title{
     font-size: 20px;
